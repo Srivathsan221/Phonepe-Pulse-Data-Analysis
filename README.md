@@ -1,74 +1,26 @@
 
 # PhonePe Pulse Data Visualization Project
+This project is about extracting,analysing and visualizing the data from phonepe pulse application with mysql database and streamlit gui framework.The Phonepe pulse Github repository contains a large amount of data related to various metrics and statistics. The goal is to extract this data and process it to obtain insights and information that can be visualized in a user-friendly manner.
 
-#### Importing required libraries
-```python
-import streamlit as st
-from PIL import Image
-import os
-import json
-from streamlit_option_menu import option_menu
-import pandas as pd
-import sqlite3
-import plotly.express as px
-```
-#### if the module shows any error or module not found it can be overcome by using below command
+# Steps:
+1. Extracted the data from the Phonepe pulse Github repository through scripting and clone it..
+2. Inserted the data into a MySQL database for efficient storage and retrieval.
+3. Created a live geo visualization dashboard using Streamlit and Plotly in Python to display the data in an interactive and visually        appealing manner.
+4. Fetched the data from the MySQL database to display in the dashboard.
+5. Provided at least 10 different dropdown options for users to select different facts and figures to display on the dashboard.
 
-```python
-pip install<module name>
-```
-### In order to get the data clone the github 
-- Inorder to clone the github data into to working environment use below command
-```python
-import requests
-response = requests.get(url)
-repo = response.json()
-clone_url = repo['clone_url']
-repo_name = "pulse"
-clone_dir = os.path.join(os.getcwd(), repo_name)
-```
-### Creating csv file 
-- after cloning the data from github the dat in the form of json file
-- In order to convert json file into data frame we use below code
-```python
-clm={'State':[], 'Year':[],'Quater':[],'Transaction_type':[], 'Transaction_count':[], 'Transaction_amount':[]}
-for i in Agg_state_list:
-    p_i=path+i+"/"
-    Agg_yr=os.listdir(p_i)
-    for j in Agg_yr:
-        p_j=p_i+j+"/"
-        Agg_yr_list=os.listdir(p_j)
-        for k in Agg_yr_list:
-            p_k=p_j+k
-            Data=open(p_k,'r')
-            D=json.load(Data)
-            for z in D['data']['transactionData']:
-              Name=z['name']
-              count=z['paymentInstruments'][0]['count']
-              amount=z['paymentInstruments'][0]['amount']
-              clm['Transaction_type'].append(Name)
-              clm['Transaction_count'].append(count)
-              clm['Transaction_amount'].append(amount)
-              clm['State'].append(i)
-              clm['Year'].append(j)
-              clm['Quater'].append(int(k.strip('.json')))
+# Approach
+1. Data extraction
+2. Data transformation
+3. Database insertion
+4. Dashboard creation
+5. Data retrieval
+6. Deployment
 
-# Successfully created a dataframe
-df_aggregated_transaction=pd.DataFrame(clm)
-```
-- After creating dataframe insert the dataframe into sql  server by using sqlite3
-- To Establish the connection with sql server
-```python
-connection = sqlite3.connect("phonepe pulse.db")
-cursor = connection.cursor()
-```
-- Create sql queries to fetch the data as per the user requirement
-```python
-SELECT * FROM "Table"
-WHERE "Condition"
-GROUP BY "Columns"
-ORDER BY "Data"
-```
-- create the streamlit app with basic tabs [Reference](https://docs.streamlit.io/library/api-reference)
-- visualizing the data with plotly and streamlit
-#### I hope this project helps you to the understand more about phonepe
+# Guide
+This data has been structured to provide details of following two sections with data cuts on Transactions and Users of PhonePe Pulse Folder that has been cloned using the PhonepePulse git repository's data folder.
+
+# Tech-stack
+-> Programming Language - Python
+-> Database - MySQL
+-> GUI Framework - Streamlit
