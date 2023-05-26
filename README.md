@@ -1,2 +1,2 @@
 # Phonepe-Pulse-Data-Analysis
-This project is about data analysis and visualization for Phonepe Pulse application data with Mysql database and Streamlit as GUI
+This project is about data analysis and visualization for Phonepe Pulse application data with Mysql database and Streamlit as GUI. The Phonepe pulse Github repository contains a large amount of data related to various metrics and statistics. The goal is to extract this data and process it to obtain insights and information that can be visualized in a user-friendly manner.
