@@ -1,6 +1,6 @@
 
 # PhonePe Pulse Data Visualization Project
-This project is about extracting,analysing and visualizing the data from phonepe pulse application with mysql database and streamlit gui framework.The Phonepe pulse Github repository contains a large amount of data related to various metrics and statistics. The goal is to extract this data and process it to obtain insights and information that can be visualized in a user-friendly manner.
+This project is about extracting,analysing and visualizing the data from phonepe pulse application with mysql database and streamlit gui framework.The Phonepe pulse Github repository contains a large amount of data related to various metrics and statistics. The goal is to extract this data and process it to obtain insights and information that can be visualized in a user-friendly manner (Data available from 2018 to 2022 only).
 
 # Steps:
 1. Extracted the data from the Phonepe pulse Github repository through scripting and clone it..
