@@ -19,3 +19,8 @@ The solution includes the following steps:
 
 ## Guide
 This data has been structured to provide details of following two sections with data cuts on Transactions and Users of PhonePe Pulse Folder that has been cloned using the PhonepePulse git repository's data folder.
+
+## Technology stack:
+Programming language - Python
+GUI Framework - Streamlit
+Database - MySQL
