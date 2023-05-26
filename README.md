@@ -11,11 +11,10 @@ This project is about extracting,analysing and visualizing the data from phonepe
 
 # Approach
 1. Data extraction
-2. Data transformation
-3. Database insertion
-4. Dashboard creation
-5. Data retrieval
-6. Deployment
+2. Database insertion
+3. Dashboard creation
+4. Data retrieval
+5. Deployment
 
 # Guide
 This data has been structured to provide details of following two sections with data cuts on Transactions and Users of PhonePe Pulse Folder that has been cloned using the PhonepePulse git repository's data folder.
